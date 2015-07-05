@@ -1,6 +1,6 @@
 scalaVersion := "2.11.6"
 
-name := """Livrarium"""
+name := """Seed"""
 
 version := "0.1"
 
