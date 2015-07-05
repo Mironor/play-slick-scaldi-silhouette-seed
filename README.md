@@ -3,8 +3,6 @@
 - Play-Slick 1.0.0 (uses Slick 3.0.0)
 - Scaldi-Play 0.5.8
 - Play-Silhouette 3.0.0-RC1
-
-
 - SBT: 1.3.8
 - Scala: 2.11.6
 
