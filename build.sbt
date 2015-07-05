@@ -18,10 +18,7 @@ libraryDependencies ++= Seq(
   "com.mohiva" %% "play-silhouette" % "3.0.0-RC1",
   "com.mohiva" %% "play-silhouette-testkit" % "3.0.0-RC1" % "test",
   "org.scaldi" %% "scaldi-play" % "0.5.8",
-  "com.sksamuel.scrimage" %% "scrimage-core" % "1.4.1",
-  "com.sksamuel.scrimage" %% "scrimage-canvas" % "1.4.1",
   "org.bouncycastle" % "bcprov-jdk16" % "1.45",
-  "org.apache.pdfbox" % "pdfbox" % "1.8.6",
   "com.h2database" % "h2" % "1.4.187",
   specs2 % Test
 )
