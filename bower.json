@@ -1,0 +1,19 @@
+{
+    "name": "livrarium",
+    "dependencies": {
+        "less": "1.7.0",
+        "lesshat": "3.0.1",
+        "jquery": "2.1.1",
+        "jasmine-jquery": "2.1.0",
+        "angular": "1.2.15",
+        "angular-route": "1.2.15",
+        "angular-ui-router": "0.2.8",
+        "angular-loader": "1.2.15",
+        "angular-mocks": "1.2.15",
+        "angular-translate": "2.2.0",
+        "angular-recursion": "1.0.1",
+        "ng-file-upload": "1.6.5",
+        "lodash": "2.4.1",
+        "underscore.string": "2.3.3"
+    }
+}

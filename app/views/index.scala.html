@@ -1,0 +1,39 @@
+@(bootstrapData: String)
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Livrarium</title>
+        <meta charset="utf-8">
+        <base href="/">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+        <link href="https://fontastic.s3.amazonaws.com/xDpa9byoYm8jR7PTJscRkT/icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="@routes.Assets.at("styles/main.css")">
+
+        <script>
+        // path to js may vary, this way we will inject it in the application
+        window.pathToApp = "/assets/js/app/" ;
+        </script>
+
+        <script src="@routes.Assets.at("js/vendor.js")"></script>
+
+        <script src="@routes.Assets.at("js/app/app.js")"></script>
+
+
+        <script src="@routes.Assets.at("js/app/i18n/en.js")"></script>
+
+        <script src="@routes.Assets.at("js/app/common/constants.js")"></script>
+        <script src="@routes.Assets.at("js/app/models/identity.js")"></script>
+
+        <script src="@routes.Assets.at("js/app/modules/sign-in/sign-in.js")"></script>
+        <script src="@routes.Assets.at("js/app/modules/sign-up/sign-up.js")"></script>
+
+        <script>
+            angular.module('seed').value('bootstrapData', @bootstrapData)
+        </script>
+
+    </head>
+    <body ng-app="seed" ui-view>
+
+
+    </body>
+</html>
