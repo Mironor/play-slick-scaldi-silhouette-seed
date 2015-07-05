@@ -122,23 +122,4 @@ describe('Sign up', function () {
         expect(identity.email).toBe(email);
     });
 
-    it('should redirect user after a successful authentication', function () {
-        // Given
-        var email = "valid@email.com";
-        form.email.$setViewValue(email);
-        form.password.$setViewValue("valid_password");
-        form.repassword.$setViewValue("valid_password");
-
-        $httpBackend.expectPOST(constants.api.signUp).respond({
-            "email": email
-        });
-
-        // When
-        scope.submit();
-        $httpBackend.flush();
-        scope.$digest();
-
-        // Then
-        expect($location.path()).toBe(constants.applicationUrls.main);
-    });
 });

@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     less = require('gulp-less');
 
 var paths = {
-    styles : 'public/styles/less/cloud.less'
+    styles : 'public/styles/less/main.less'
 };
 
 gulp.task('deps_dev', function () {

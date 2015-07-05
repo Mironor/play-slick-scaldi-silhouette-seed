@@ -11,14 +11,26 @@ How to run
 
 * This application uses in-memory database as main database and as a database for tests, so be aware that all users are lost on restart
 
+* To install javascript part:
+```
+npm install
+bower install
+gulp deps_dev deps_test less
+```
+
 * Run the application:
 ```
 sbt run
 ```
 
-* Test the application:
+* test the application (server side):
 ```
 sbt test
+```
+
+* test the application (client side):
+```
+karma test
 ```
 
 Please report if there is any issue with running this seed, thanks!

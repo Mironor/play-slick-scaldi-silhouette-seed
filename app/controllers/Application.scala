@@ -8,6 +8,7 @@ import com.mohiva.play.silhouette.api.util.{Credentials, PasswordHasher, Passwor
 import com.mohiva.play.silhouette.api.{Silhouette, _}
 import com.mohiva.play.silhouette.impl.authenticators.SessionAuthenticator
 import com.mohiva.play.silhouette.impl.providers.CredentialsProvider
+import daos.silhouette.SilhouetteDAOException
 import models.User
 import play.api.i18n.MessagesApi
 import play.api.libs.concurrent.Execution.Implicits._
@@ -96,6 +97,10 @@ class Application(implicit inj: Injector)
         "code" -> inject[Int](identified by "errors.auth.notAuthenticated"),
         "message" -> "Not authenticated"
       ))
+      case e: SilhouetteDAOException => InternalServerError(Json.obj(
+          "code" -> inject[Int](identified by "errors.auth.userNotFound"),
+          "message" -> "User was not found"
+        ))
     }
   }
 
