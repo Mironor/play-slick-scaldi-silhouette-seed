@@ -1,4 +1,10 @@
-###Current stack:
+What is it:
+--------------------------------------------------
+A fully working, test covered (server-side/client-side) scala seed for web applications with orm, di and authentication management.
+
+
+Current stack:
+--------------------------------------------------
 - Play 2.4.0
 - Play-Slick 1.0.0 (uses Slick 3.0.0)
 - Scaldi-Play 0.5.8
